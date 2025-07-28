@@ -10,15 +10,19 @@ while True:
 
     if escolha == '1':
         medicamento = input("Digite o nome de seu novo medicamento: ")
-        dosagem_input = input("Digite a dosagem (em ml): ")
+        dosagem_input = input("Digite a dosagem (em ml ou mg): ")
 
         try:
             dosagem = float(dosagem_input)
+            data_inicio = input("Digite a data de início do tratamento: ")
+            data_fim = input("Digite a data de término do tratamento: ")
             orientacoes = input("Quais as orientações desse remédio? ")
 
             registro = {
                 "medicamento": medicamento,
                 "dosagem": dosagem,
+                "data_inicio": data_inicio,
+                "data_fim": data_fim,
                 "orientacoes": orientacoes
             }
 
@@ -35,7 +39,10 @@ while True:
                 print(f"\nMedicamento {i}:")
                 print(f" Nome: {med['medicamento']}")
                 print(f" Dosagem: {med['dosagem']}")
+                print(f" Início: {med['data_inicio']}")
+                print(f" Término: {med['data_fim']}")
                 print(f" Orientações: {med['orientacoes']}")
+
         else:
             print("\nVocê ainda não registrou nenhum medicamento.")
 
