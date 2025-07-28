@@ -9,9 +9,9 @@ while True:
     escolha = input("\nDigite 1, 2 ou 3: ")
 
     if escolha == '1':
-        data_hora = input("Digite a data e hora do início da atividade (ex: 28/07/2025 14:30): ")
-        duracao = input("Qual foi a duração da atividade? (ex: 45 minutos): ")
-        distancia = input("Qual foi a distância percorrida? (ex: 5 km): ")
+        data_hora = input("Digite a data e hora do início da atividade: ")
+        duracao = input("Qual foi a duração da atividade?: ")
+        distancia = input("Qual foi a distância percorrida? (em Km): ")
         calorias = input("Quantas calorias foram queimadas? ")
 
         registro = {
