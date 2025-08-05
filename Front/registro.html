@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="registro.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App de Bem-Estar</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <img src="logo_hábitos-removebg-preview.png" alt="Logo Hábitos+">
+        <span>Hábitos+</span>
+        </div>
+        <div class="nav-links">
+        <a href="#alimentos">Alimentos</a>
+        <a href="#exercicios">Exercícios</a>
+        <a href="#agua">Água</a>
+        <a href="#sono">Sono</a>
+        <a href="#humor">Humor</a>
+        <a href="#medicamentos">Medicamentos</a>
+        <a href="#observacoes">Observações</a>
+        </div>
+    </nav>
+
+  <!-- Refeições (cartões) -->
+  <div class="container">
+    <h1>🍽️ Refeições</h1>
+    <button class="add-button">+ Adicionar Refeição</button>
+
+    <!-- Café da Manhã -->
+    <div class="card">
+      <div class="card-header">
+        <h2>☕ Café da Manhã</h2>
+        <span class="time">08:30 AM</span>
+      </div>
+      <ul class="item-list">
+        <li><span>Pão integral com queijo</span><span>250 kcal</span></li>
+        <li><span>Suco de laranja</span><span>120 kcal</span></li>
+        <li><span>Mamão</span><span>80 kcal</span></li>
+      </ul>
+      <div class="card-footer">
+        <strong>Total: 450 kcal</strong>
+        <div class="actions">
+          <button class="edit">✏️</button>
+          <button class="delete">🗑️</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Almoço -->
+    <div class="card">
+      <div class="card-header">
+        <h2>🍽️ Almoço</h2>
+        <span class="time">12:45 PM</span>
+      </div>
+      <ul class="item-list">
+        <li><span>Arroz integral</span><span>200 kcal</span></li>
+        <li><span>Feijão</span><span>150 kcal</span></li>
+        <li><span>Frango grelhado</span><span>250 kcal</span></li>
+        <li><span>Salada verde</span><span>50 kcal</span></li>
+      </ul>
+      <div class="card-footer">
+        <strong>Total: 650 kcal</strong>
+        <div class="actions">
+          <button class="edit">✏️</button>
+          <button class="delete">🗑️</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Itens Alimentares -->
+  <div class="container">
+    <h1>🍎 Itens Alimentares</h1>
+    <button class="add-button">+ Adicionar Item</button>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Porção</th>
+            <th>Calorias</th>
+            <th>Carboidratos</th>
+            <th>Proteínas</th>
+            <th>Gorduras</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Arroz integral</strong></td>
+            <td>100g</td>
+            <td>124</td>
+            <td>25.6g</td>
+            <td>2.7g</td>
+            <td>0.9g</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Peito de frango</strong></td>
+            <td>100g</td>
+            <td>165</td>
+            <td>0g</td>
+            <td>31g</td>
+            <td>3.6g</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Maçã</strong></td>
+            <td>1 média (182g)</td>
+            <td>95</td>
+            <td>25g</td>
+            <td>0.5g</td>
+            <td>0.3g</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Exercícios Físicos -->
+  <div class="container">
+    <h1>🏋️‍♂️ Exercícios Físicos</h1>
+    <button class="add-button">+ Adicionar</button>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Atividade</th>
+            <th>Duração</th>
+            <th>Calorias</th>
+            <th>Carboidratos</th>
+            <th>Proteínas</th>
+            <th>Gorduras</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Corrida</td>
+            <td>30 min</td>
+            <td>300 kcal</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Caminhada</td>
+            <td>45 min</td>
+            <td>180 kcal</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Consumo de Água -->
+  <div class="container">
+    <h1>💧 Consumo de Água</h1>
+    <button class="add-button">+ Adicionar Registro</button>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Quantidade</th>
+            <th>Horário</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Copo de água</td>
+            <td>250ml</td>
+            <td>08:30 AM</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Garrafa</td>
+            <td>500ml</td>
+            <td>12:15 PM</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="actions">
+              <button class="edit">✏️</button>
+              <button class="delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Qualidade do Sono -->
+  <div class="container">
+    <h1>🛌 Qualidade do Sono</h1>
+    <button class="add-button">+ Adicionar Registro</button>
+    <div class="sleep-card">
+      <div class="card-header">
+        <h2>Noite de Sono</h2>
+        <span class="date-label">Ontem</span>
+      </div>
+      <div class="sleep-info">
+        <div>
+          <span class="label">Início</span>
+          <div class="value">23:15</div>
+        </div>
+        <div>
+          <span class="label">Término</span>
+          <div class="value">06:45</div>
+        </div>
+        <div>
+          <span class="label">Duração</span>
+          <div class="value">7h 30min</div>
+        </div>
+        <div>
+          <span class="label">Qualidade</span>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
+        </div>
+      </div>
+      <hr />
+      <div class="obs">Observações: Acordei uma vez durante a noite</div>
+      <div class="actions" style="margin-top:12px;">
+        <button class="edit">✏️</button>
+        <button class="delete">🗑️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Humor Diário -->
+  <div class="container">
+    <h1>😊 Humor Diário</h1>
+    <button class="add-button">+ Adicionar Registro</button>
+    <div class="mood-grid">
+      <div class="mood-card">
+        <div class="card-header">
+          <strong>Manhã</strong>
+          <span>08:30 AM</span>
+        </div>
+        <div class="emoji" style="font-size:32px;">😊</div>
+        <p>Me senti bem ao acordar, com energia para o dia</p>
+        <hr />
+        <div class="tags">
+          <span class="tag blue">Energizado</span>
+          <span class="tag green">Feliz</span>
+        </div>
+        <div class="actions" style="margin-top:8px;">
+          <button class="edit">✏️</button>
+          <button class="delete">🗑️</button>
+        </div>
+      </div>
+
+      <div class="mood-card">
+        <div class="card-header">
+          <strong>Tarde</strong>
+          <span>14:15 PM</span>
+        </div>
+        <div class="emoji" style="font-size:32px;">🙂</div>
+        <p>Dia produtivo no trabalho, mas um pouco cansado</p>
+        <hr />
+        <div class="tags">
+          <span class="tag green">Produtivo</span>
+          <span class="tag gray">Cansado</span>
+        </div>
+        <div class="actions" style="margin-top:8px;">
+          <button class="edit">✏️</button>
+          <button class="delete">🗑️</button>
+        </div>
+      </div>
+
+      <div class="mood-form">
+        <h2>Adicionar Registro de Humor</h2>
+        <div class="emoji-options">
+          <span>😠</span>
+          <span>😟</span>
+          <span>😐</span>
+          <span>😊</span>
+          <span>😄</span>
+        </div>
+        <label>Horário</label>
+        <input type="time" />
+        <label>Notas</label>
+        <textarea placeholder="Como você está se sentindo?"></textarea>
+        <label>Tags</label>
+        <div class="tag-select">
+          <span class="tag gray">Feliz</span>
+          <span class="tag gray">Cansado</span>
+          <span class="tag gray">Estressado</span>
+          <span class="tag gray">Produtivo</span>
+          <span class="tag gray">Ansioso</span>
+        </div>
+        <div class="form-actions" style="margin-top:12px;">
+          <button class="cancel">Cancelar</button>
+          <button class="save">Salvar Registro</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sintomas -->
+  <div class="container">
+    <section>
+      <h1>🩺 Registros de Sintomas</h1>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
+        <button class="gray-button">📋 Tipos de Sintoma</button>
+        <button class="blue-button">+ Adicionar Registro</button>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Sintoma</th>
+              <th>Intensidade</th>
+              <th>Duração</th>
+              <th>Descrição</th>
+              <th>Tags</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dor de cabeça</td>
+              <td>Moderado</td>
+              <td>2 horas</td>
+              <td>Dor latejante na região frontal, piorou com luz forte</td>
+              <td><span class="tag orange">Moderado</span> <span class="tag blue">Cabeça</span></td>
+              <td class="actions">
+                <button class="edit">✏️</button>
+                <button class="delete">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Fadiga</td>
+              <td>Leve</td>
+              <td>Contínua</td>
+              <td>Cansaço geral, sem energia para atividades</td>
+              <td><span class="tag purple">Fadiga</span> <span class="tag gray">Geral</span></td>
+              <td class="actions">
+                <button class="edit">✏️</button>
+                <button class="delete">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- Medicamentos -->
+  <div class="container">
+    <section>
+      <h1>🌿 Medicamentos</h1>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
+        <button class="gray-button">📋 Lista de Medicamentos</button>
+        <button class="green-button">+ Adicionar Registro</button>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Dose</th>
+              <th>Frequência</th>
+              <th>Início</th>
+              <th>Término</th>
+              <th>Indicação</th>
+              <th>Tags</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paracetamol 500mg</td>
+              <td>1 comprimido</td>
+              <td>8/8 horas</td>
+              <td>15/06/2023</td>
+              <td>20/06/2023</td>
+              <td>Dor de cabeça moderada</td>
+              <td><span class="tag blue">Analgésico</span></td>
+              <td class="actions">
+                <button class="edit">✏️</button>
+                <button class="delete">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamina D</td>
+              <td>1000UI</td>
+              <td>1x ao dia</td>
+              <td>01/07/2025</td>
+              <td>--</td>
+              <td>Manutenção</td>
+              <td><span class="tag green">Suplemento</span></td>
+              <td class="actions">
+                <button class="edit">✏️</button>
+                <button class="delete">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Hábitos+. Todos os direitos reservados.</p>
+    <p>Desenvolvido com 💙 para promover hábitos saudáveis.</p>
+  </footer>
+</body>
+</html>
