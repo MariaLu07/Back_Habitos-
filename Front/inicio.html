@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Início | HÁBITOS+</title>
+  <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <img src="logo_hábitos-removebg-preview.png" alt="Logo">
+      <span class="logo-text">HÁBITOS+</span>
+    </div>
+    <div class="controls">
+      <label for="themeSwitch">🌗</label>
+      <input id="themeSwitch" type="checkbox" class="toggle-theme">
+      <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Sair</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <h1>👋 Olá, bem-vindo(a) de volta!</h1>
+    <p>Escolha uma categoria para acessar seus registros:</p>
+
+    <section class="cards">
+      <a href="refeicoes.html" class="card"><i class="fas fa-utensils"></i><span>Refeições</span></a>
+      <a href="sono.html" class="card"><i class="fas fa-bed"></i><span>Sono</span></a>
+      <a href="humor.html" class="card"><i class="fas fa-smile"></i><span>Humor</span></a>
+      <a href="agua.html" class="card"><i class="fas fa-tint"></i><span>Água</span></a>
+      <a href="exercicios.html" class="card"><i class="fas fa-dumbbell"></i><span>Exercícios</span></a>
+      <a href="sintomas.html" class="card"><i class="fas fa-notes-medical"></i><span>Sintomas</span></a>
+      <a href="medicamentos.html" class="card"><i class="fas fa-pills"></i><span>Medicamentos</span></a>
+      <a href="configuracoes.html" class="card"><i class="fas fa-cog"></i><span>Configurações</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HÁBITOS+. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('themeSwitch');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('light-theme');
+      if (document.body.classList.contains('light-theme')) {
+        document.documentElement.style.setProperty('--bg', '#f8fafc');
+        document.documentElement.style.setProperty('--card', '#ffffff');
+        document.documentElement.style.setProperty('--text', '#020617');
+      } else {
+        document.documentElement.style.setProperty('--bg', '#0f172a');
+        document.documentElement.style.setProperty('--card', '#1e293b');
+        document.documentElement.style.setProperty('--text', '#f1f5f9');
+      }
+    });
+  </script>
+</body>
+</html>
