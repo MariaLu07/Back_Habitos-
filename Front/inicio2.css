@@ -6,7 +6,7 @@
   --light: #F8FAFC;
   --text-dark: #020617;
   --text-light: #f1f5f9;
-  --card: #1e293b; /* Added card color */
+  --card: #1e293b;
 }
 
 * {
@@ -131,7 +131,6 @@ footer a {
   text-decoration: none;
 }
 
-/* Combine the two @media queries */
 @media (max-width: 600px) {
   .nav-links {
     flex-direction: column;
@@ -299,4 +298,5 @@ body.light-mode .settings-btn3 {
 body.light-mode .settings-btn:hover3 {
   background-color: var(--secondary);
   color: var(--light);
+
 }
