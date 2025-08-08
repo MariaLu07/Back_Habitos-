@@ -1,0 +1,302 @@
+:root {
+  --primary: #38bdf8;
+  --secondary: #B399D4;
+  --accent: #C1E1C1;
+  --dark: #0F172A;
+  --light: #F8FAFC;
+  --text-dark: #020617;
+  --text-light: #f1f5f9;
+  --card: #1e293b; /* Added card color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: var(--light);
+  color: var(--text-dark);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  height: 40px;
+}
+
+.brand h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.theme-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-controls button {
+  background: white;
+  color: var(--primary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 80px 20px 0;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+body.light-mode .card {
+  background-color: #c0dde9;
+  color: var(--text-dark);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #1976D2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #BBDEFB;
+  text-decoration: none;
+}
+
+/* Combine the two @media queries */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  header .brand h1 {
+    font-size: 20px;
+  }
+
+  .theme-controls button {
+    padding: 6px 12px;
+  }
+}
+
+body.light-mode footer {
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+.navbar {
+  background-color: var(--card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.navbar .logo-text {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.toggle-theme {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  background: var(--secondary);
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-theme::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-theme:checked::before {
+  transform: translateX(20px);
+}
+
+.settings-btn {
+  background-color: var(--secondary);
+  color: var(--text-light);
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-btn:hover {
+  background-color: var(--primary);
+  color: var(--text-dark);
+}
+
+body.light-mode .settings-btn {
+  background-color: var(--primary);
+  color: var(--text-dark);
+}
+
+body.light-mode .settings-btn:hover {
+  background-color: var(--secondary);
+  color: var(--text-light);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+.settings-btn2 {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  border-color: #000000;
+    border-width: thin;
+}
+
+.settings-btn2:hover {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+body.light-mode .settings-btn2 {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+body.light-mode .settings-btn:hover2 {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.settings-btn3 {
+  background-color: var(--light);
+  color: var(--primary);
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  border-color: #000000;
+  border-width: thin;
+}
+
+.settings-btn3:hover {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+body.light-mode .settings-btn3 {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+body.light-mode .settings-btn:hover3 {
+  background-color: var(--secondary);
+  color: var(--light);
+}

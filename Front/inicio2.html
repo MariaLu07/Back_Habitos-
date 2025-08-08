@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Início | HÁBITOS+</title>
+  <link rel="stylesheet" href="inicio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="navbar">
+  <div style="display: flex; align-items: center">
+    <img src="logo_hábitos-removebg-preview.png" alt="Logo">
+    <span class="logo-text">HÁBITOS+</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 12px">
+    <a href="confi_usu.html" class="settings-btn" title="Configurações">
+      <i class="fas fa-cog"></i>
+    </a>
+    <label for="themeSwitch">Modo Escuro</label>
+    <input id="themeSwitch" type="checkbox" class="toggle-theme">
+  </div>
+</header>
+
+<main>
+  <h1 class="margem">👋 Bem-vindo(a) ao HÁBITOS+</h1>
+  <p>Escolha uma categoria para registrar sua saúde:</p>
+  <div class="grid">
+    <a href="registro.html#refeicoes" class="card">
+      <i class="fas fa-utensils" style="color: var(--secondary);"></i>
+      <h3>Refeições</h3>
+      <p>Documente suas refeições principais e lanches. Adicione fotos e notas sobre cada refeição.</p>
+    </a>    
+    <a href="registro.html#alimentos" class="card">
+      <i class="fas fa-utensils" style="color: var(--secondary);"></i>
+      <h3>Alimentos</h3>
+      <p>Crie um banco de dados dos alimentos que você consome regularmente com informações nutricionals.</p>
+    </a>
+    <a href="registro.html#sono" class="card">
+      <i class="fas fa-bed" style="color: var(--primary);"></i>
+      <h3>Sono</h3>
+      <p>Monitore a qualidade e duração do seu sono. Identifique padrões que alteram seu sono.</p>
+    </a>
+    <a href="registro.html#humor" class="card">
+      <i class="fas fa-smile" style="color: var(--accent);"></i>
+      <h3>Humor</h3>
+      <p>Documente seu estado emocional ao longo do dia e identifique fatores que influenciam seu humor.</p>
+    </a>
+    <a href="registro.html#agua" class="card">
+      <i class="fas fa-tint" style="color: var(--secondary);"></i>
+      <h3>Água</h3>
+      <p>Acompanhe sua hidratação diária com lembretes personalizados para atingir suas metas.</p>
+    </a>
+    <a href="registro.html#exercicios" class="card">
+      <i class="fas fa-dumbbell" style="color: var(--primary);"></i>
+      <h3>Exercícios</h3>
+      <p>Registre seus exercícios, duração e intensidade. Visualize seu progresso ao longo do tempo.</p>
+    </a>
+    <a href="registro.html#sintomas" class="card">
+      <i class="fas fa-notes-medical" style="color: var(--accent);"></i>
+      <h3>Sintomas</h3>
+      <p>Categorize e acompanhe diferentes sintomas físicos que você experimenta regularmente.</p>
+    </a>
+    <a href="registro.html#medicamentos" class="card">
+      <i class="fas fa-pills" style="color: var(--accent);"></i>
+      <h3>Medicamentos</h3>
+      <p>Mantenha um registro dos medicamentos que você toma, com dosagens e horários.</p>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Hábitos+. Todos os direitos reservados.</p>
+  <p>Desenvolvido com 💙 para promover hábitos saudáveis.</p>
+</footer>
+
+<script>
+  const themeSwitch = document.getElementById('themeSwitch');
+  themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('light-mode');
+  });
+</script>
+</body>
+</html>
